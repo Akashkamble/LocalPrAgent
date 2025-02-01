@@ -1,0 +1,22 @@
+[config]
+git_provider = "github"  # or "bitbucket" bitbucket is not supported at this moment
+publish_output = false
+
+# **90-100**: Excellent; ready to merge with minor or no changes.
+# **70-89**: Good; some improvements suggested.
+# **50-69**: Needs work; several issues found.
+# **Below 50**: Poor; major revisions required.
+review_score_threshold = 70
+
+pr_link = ""
+
+[ollama]
+api_base = "http://localhost:11434"
+model = "deepseek-r1:7b"
+temperature = 0.1
+
+[github]
+token = "your-github-token"
+
+[bitbucket]
+token = "your-bitbucket-token"
