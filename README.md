@@ -20,7 +20,12 @@ This is just POC project to learn how to use Ollama effectively and this project
   ollama serve
 ```
 
-3. Edit `settings/configuration.toml` with your settings:
+4. Install dependencies:
+```bash
+  pip install -r requirements.txt
+```
+
+5. Edit `settings/configuration.toml` with your settings:
 ```toml
 [config]
 git_provider = "github"
@@ -37,11 +42,10 @@ temperature = 0.1 # This should be between [0-1]. The higher the value, the more
 token = "your-github-personal-access-token"    # Get from https://github.com/settings/tokens
 ```
 
+6. After completing above step run main.py
+
 ## Features
 
 - Currently only Supports GitHub. 
 - Uses locally installed Ollama.
 - Comments on PRs if LLM Review score is less than the threshold set by you.
-
-
-### After completing setup you can try this by running main.py
